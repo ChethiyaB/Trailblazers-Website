@@ -1,23 +1,3 @@
-/*-----------------------------------------------------------------------------------
-
-    Template Name: Eventify - Event and Conference Template
-    Template URI: graygrids.com
-    Description: Eventify - Event and Conference Template
-    Author: GrayGrids
-    Author URI: graygrids.com
-    Version: 1.0
-
------------------------------------------------------------------------------------
-
-    CSS INDEX
-    ===================
-
-    01. Theme default CSS
-	02. Header
-    03. Hero
-	04. Footer
-
------------------------------------------------------------------------------------*/
 /*===========================
     1. COMMON css 
 ===========================*/
@@ -90,10 +70,10 @@ ul, ol {
   list-style-type: none; }
 
 p {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 30px;
-  color: #000000;
+  line-height: 24px;
+  color: #777777;
   margin: 0px; }
 
 .bg_cover {
@@ -118,7 +98,7 @@ p {
   font-size: 16px;
   line-height: 48px;
   border-radius: 50px;
-  color: #2650a8;
+  color: #011A63;
   cursor: pointer;
   z-index: 5;
   -webkit-transition: all 0.4s ease-out 0s;
@@ -147,7 +127,6 @@ p {
     .main-btn.main-btn-2:hover {
       background-position: right center;
       color: #fff; }
-
 
 /*===== All Section Title Style =====*/
 .section-title .title {
@@ -441,7 +420,6 @@ p {
     -ms-transform: rotate(-130deg);
     -o-transform: rotate(-130deg);
     transform: rotate(-130deg); } }
-
 /*===========================
     2.HEADER css 
 ===========================*/
@@ -470,7 +448,7 @@ p {
     content: '';
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, #131d49 0%, #2650a8 100%);
+    background: linear-gradient(to right, #011A63 0%, #2849adf6 100%);
     top: 0;
     left: 0;
     z-index: -1;
@@ -563,7 +541,9 @@ p {
           @media only screen and (min-width: 768px) and (max-width: 991px) {
             .navbar-area .navbar .navbar-nav .nav-item a::before {
               display: none; } }
-
+          @media (max-width: 767px) {
+            .navbar-area .navbar .navbar-nav .nav-item a::before {
+              display: none; } }
         @media only screen and (min-width: 768px) and (max-width: 991px) {
           .navbar-area .navbar .navbar-nav .nav-item a {
             padding: 10px 0;
@@ -588,26 +568,31 @@ p {
       background-color: #fff;
       color: #1863ff; }
 
-
 /*===== Header =====*/
 .header-content-area {
-  height: 600px;
+  height: 750px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   position: relative;
   overflow: hidden; }
   @media only screen and (min-width: 1400px) {
     .header-content-area {
-      height: 850px; } }
-  @media (max-width: 767px) {
+      height: 700px; } }
+  @media (max-width: 1100px) {
     .header-content-area {
       height: 650px; } }
-  @media only screen and (min-width: 576px) and (max-width: 767px) {
+  @media only screen and (min-width: 576px) and (max-width: 1100px) {
     .header-content-area {
-      height: 550px; } }
-  @media only screen and (min-width: 300px) and (max-width: 576px){
-    .header-content-area {
-      height: 220px; } }
+      height: 500px; } }
+  @media only screen and (min-width: 350px) and (max-width: 576px) {
+      .header-content-area {
+       height: 300px; } }
+  @media (max-width: 350px) {
+      .header-content-area {
+       height: 250px; }
+      .navbar-brand{
+        width: 30px;
+      } }
   .header-content-area::before {
     position: absolute;
     content: '';
@@ -785,7 +770,7 @@ p {
       padding: 40px; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .event-tab {
-      padding: 30px; } }
+      padding: 10px; } }
   @media (max-width: 767px) {
     .event-tab {
       padding: 10px;
