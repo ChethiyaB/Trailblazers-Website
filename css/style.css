@@ -589,7 +589,7 @@ p {
        height: 300px; } }
   @media (max-width: 350px) {
       .header-content-area {
-       height: 250px; }
+       height: 200px; }
       .navbar-brand{
         width: 30px;
       } }
